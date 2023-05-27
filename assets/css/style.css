@@ -56,3 +56,15 @@
   border: 1px solid #1f1235;
 }
 /* Akhir Main */
+
+/* Footer */
+footer {
+  margin-top: 120px;
+}
+
+footer p {
+  background-color: #1f1235;
+  color: white;
+  padding: 0.5rem;
+}
+/* Akhir Footer */
