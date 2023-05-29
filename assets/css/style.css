@@ -72,6 +72,20 @@ body {
 .main .tab-pane .row .col-lg-3 {
   margin-top: 1rem;
 }
+
+.main .tab-pane .row .col-lg-3 a {
+  overflow: hidden;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.main .tab-pane .row .col-lg-3 a:hover {
+  font-size: 1.1rem;
+}
+
+.main .tab-pane .row .col-lg-3 .card {
+  border: 3px solid #1f1235;
+}
 /* Akhir Main */
 
 /* Footer */
