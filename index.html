@@ -64,15 +64,23 @@
     <!-- Navbar -->
 
     <!-- Awal Hero -->
-    <div class="hero" id="hero" data-aos="fade-up">
+    <div class="hero" id="hero">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-12">
-            <h1>
+            <h1
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="300"
+            >
               GAMEBOT <br />
               INFORMASI UNTUK GAME.
             </h1>
-            <p>
+            <p
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="400"
+            >
               Web ini memberikan informasi mengenai Spesifikasi PC/Laptop yang
               dibutuhkan oleh suatu game. Web ini juga menampilkan rating, harga
               dan review dari orang-orang yang sudah memainkan game tersebut
@@ -80,7 +88,12 @@
           </div>
 
           <div class="col-lg-6 col-md-12">
-            <img src="./assets/img/Hero.jpg" alt="" />
+            <img
+              src="./assets/img/Hero.jpg"
+              alt=""
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            />
           </div>
         </div>
       </div>
@@ -90,7 +103,7 @@
     <!-- Awal Main -->
     <div id="main" class="main">
       <div class="container">
-        <div class="row">
+        <div class="row" data-aos="fade-down" data-aos-duration="1500">
           <!-- Menu Tabs -->
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -369,13 +382,24 @@
       <div class="container">
         <div class="row row-atas">
           <div class="col-lg-6">
-            <div class="foot-brand">
-              <img src="./assets/img/Logo-Brand2.png" alt="" />
+            <div
+              class="foot-brand"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <a href="#">
+                <img src="./assets/img/Logo-Brand2.png" alt="" />
+              </a>
             </div>
           </div>
 
           <div class="col-lg-6">
-            <p class="text-sm-center text-md-center text-lg-end">
+            <p
+              class="text-sm-center text-md-center text-lg-end"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="400"
+            >
               GameBOT memberikan informasi mengenai Spesifikasi PC, rating,
               harga dan review yang dibutuhkan oleh suatu game yang akan di
               mainkan.
@@ -387,7 +411,7 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <p class="text-start">Copyrigh 2023 GameBOT</p>
+            <p class="text-start">Copyright 2023 GameBOT</p>
           </div>
           <div class="col-lg-6">
             <p class="text-end">All Rights Reserved</p>
@@ -407,7 +431,10 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+      AOS.refresh();
     </script>
   </body>
 </html>
