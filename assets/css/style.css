@@ -30,6 +30,10 @@ body {
   font-family: "Bruno Ace SC", cursive;
   font-weight: bold;
   color: #1f1235 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* Awal Hero */
@@ -54,6 +58,7 @@ body {
 /* Awal Main */
 .main {
   margin-top: 120px;
+  overflow: hidden;
 }
 
 .main .container .row .nav-tabs .nav-link {
@@ -92,6 +97,7 @@ body {
 footer {
   margin-top: 120px;
   background-color: #1f1235;
+  overflow: hidden;
 }
 
 footer .container {
@@ -123,12 +129,21 @@ footer .line-footer {
     display: none;
   }
 
+  /* Main */
+  .main {
+    padding: 0 10px;
+  }
+
   /* Footer */
   .foot-brand {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+  }
+
+  footer .container {
+    padding: 30px 10px;
   }
 }
 
@@ -141,4 +156,9 @@ footer .line-footer {
 
 /* Large devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+  .hero img {
+    width: 80%;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+  }
 }
