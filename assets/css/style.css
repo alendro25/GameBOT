@@ -82,14 +82,14 @@ body {
 .main .tab-pane .row .col-lg-3 a {
   overflow: hidden;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .main .tab-pane .row .col-lg-3 a:hover {
   font-weight: 500;
 }
 .main .tab-pane .row .col-lg-3 a:hover .card-body {
-  transition: 0.3s;
+  transition: 0.5s;
   background-color: #ff6f6c71;
 }
 
