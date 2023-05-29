@@ -71,7 +71,7 @@ body {
 .main .container .row .nav-tabs .nav-link.active {
   background-color: #ff6e6c;
   font-weight: bold;
-  border: 1px solid #1f1235;
+  border: 3px solid #1f1235;
 }
 
 .main .tab-pane .row .col-lg-3 {
@@ -85,7 +85,11 @@ body {
 }
 
 .main .tab-pane .row .col-lg-3 a:hover {
-  font-size: 1.1rem;
+  font-weight: 500;
+}
+.main .tab-pane .row .col-lg-3 a:hover .card-body {
+  transition: 0.3s;
+  background-color: #ff6f6c71;
 }
 
 .main .tab-pane .row .col-lg-3 .card {
