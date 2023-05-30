@@ -25,9 +25,32 @@ body {
   color: white;
 }
 
-.bi-search {
+/* Icons */
+.bi-search,
+.bi-instagram,
+.bi-facebook,
+.bi-twitter,
+.bi-twitch {
   color: white;
+  transition: 0.5s;
 }
+
+.bi-facebook:hover {
+  color: rgb(56, 150, 238);
+}
+
+.bi-twitter:hover {
+  color: #2dd7f5;
+}
+
+.bi-twitch:hover {
+  color: wheat;
+}
+
+.bi-instagram:hover {
+  color: rgb(240, 134, 14);
+}
+/* AKhir Icons */
 
 /* Navbar */
 .navbar {
@@ -106,19 +129,21 @@ body {
 .main .tab-pane .row .col-lg-3 a {
   overflow: hidden;
   text-decoration: none;
-  transition: 0.5s;
 }
-
-.main .tab-pane .row .col-lg-3 a:hover {
-  font-weight: 500;
+.main .tab-pane .row .col-lg-3 a .card .card-body {
+  transition: 0.5s;
 }
 .main .tab-pane .row .col-lg-3 a:hover .card-body {
-  transition: 0.5s;
-  background-color: #ff6f6c71;
+  font-weight: 500;
 }
 
-.main .tab-pane .row .col-lg-3 .card {
-  border: 3px solid #1f1235;
+.main .tab-pane .row .col-lg-3 a .card {
+  border: 1px solid #1f1235;
+  transition: 0.5s;
+}
+.main .tab-pane .row .col-lg-3 a:hover .card {
+  background-color: #ff6f6c71;
+  border: 2px solid #1f1235;
 }
 /* Akhir Main */
 
@@ -147,6 +172,16 @@ footer p {
 footer .line-footer {
   color: white;
 }
+
+footer .social {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: end;
+}
+
+footer .social a i {
+  font-size: 1.5rem;
+}
 /* Akhir Footer */
 
 /* Media Query */
@@ -174,6 +209,10 @@ footer .line-footer {
   footer .container {
     padding: 30px 10px;
   }
+
+  footer .social {
+    justify-content: center;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -188,6 +227,10 @@ footer .line-footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+  }
+
+  footer .social {
+    justify-content: center;
   }
 }
 
