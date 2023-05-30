@@ -25,7 +25,17 @@ body {
   color: white;
 }
 
+.bi-search {
+  color: white;
+}
+
 /* Navbar */
+.navbar {
+  background-color: rgba(18, 33, 53, 0.8) !important;
+  border-bottom: 1px solid #fd9391;
+  box-shadow: inset 0 0 80px #1f1235;
+}
+
 .navbar-brand {
   font-family: "Bruno Ace SC", cursive;
   font-weight: bold;
@@ -34,6 +44,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  -webkit-text-stroke: 0.1px white;
 }
 
 /* Awal Hero */
@@ -45,6 +56,12 @@ body {
   margin-top: 4rem;
   font-size: 2rem;
   font-weight: 600;
+  line-height: 3rem;
+}
+
+.hero p {
+  line-height: 2.3rem;
+  text-align: justify;
 }
 
 .hero img {
@@ -53,7 +70,14 @@ body {
   height: 100%;
   box-shadow: 10px 10px 8px #888888;
   overflow: hidden;
+  transition: 0.3s;
 }
+
+.hero .container .row .img-container:hover img {
+  transform: scale(0.9);
+  box-shadow: 7px 7px 5px #888888c0;
+}
+
 /* Akhir Hero */
 
 /* Awal Main */
