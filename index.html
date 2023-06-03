@@ -47,23 +47,11 @@
           <img
             src="./assets/img/Logo2.png"
             alt="Logo"
-            width="30"
-            height="40"
-            class="d-inline-block align-text-top"
-          />
+            width="40"
+            height="50"
+            class="d-inline-block align-text-top" />
           GameBOT
         </a>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Cari"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-salmon" type="submit">
-            <i class="bi bi-search"></i>
-          </button>
-        </form>
       </div>
     </nav>
     <!-- Navbar -->
@@ -78,8 +66,7 @@
               data-aos-duration="1500"
               data-aos-delay="300"
             >
-              GAMEBOT <br />
-              INFORMASI UNTUK GAME.
+              INFORMASI UNTUK GAME
             </h1>
             <p
               data-aos="fade-left"
@@ -110,7 +97,8 @@
       <div class="container">
         <div class="row" data-aos="fade-down" data-aos-duration="1500">
           <!-- Menu Tabs -->
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <ul class="nav nav-tabs justify-content-between gap-2" id="myTab" role="tablist">
+           <div class="d-flex flex-row flex-wrap">
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link active"
@@ -181,7 +169,31 @@
                 ACTION
               </button>
             </li>
+          </div>
+          <div style="position: relative;">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  id="input-box"
+                  type="search"
+                  placeholder="Cari"
+                  aria-label="Search"
+                  autocomplete="off"
+                />
+                <button class="btn btn-outline-salmon" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+              <div class="result-box">
+                <!-- <ul>
+                  <li>Angry Bird</li>
+                  <li>Bomb</li>
+                  <li>Counter-Strike</li>
+                </ul> -->
+              </div>
+          </div>
           </ul>
+          
           <!-- Akhir Menu Tabs -->
 
           <!-- Isi Menu Tabs -->
@@ -2350,5 +2362,8 @@
       });
       AOS.refresh();
     </script>
+
+    <!-- Autocomplete JS -->
+    <script src="./assets/js/autocomplete.js"></script>
   </body>
 </html>
