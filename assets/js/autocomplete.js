@@ -39,7 +39,11 @@ inputBox.onkeyup = function () {
 
 function display(result) {
   const content = result.map((list) => {
-    return "<li onClick=selectInput(this)>" + list + "</li>";
+    return (
+      '<li onClick=selectInput(this) data-bs-toggle="modal" data-bs-target="#DOTA" >' +
+      list +
+      "</li>"
+    );
   });
 
   resultBox.innerHTML = "<ul>" + content.join("") + "</ul>";
