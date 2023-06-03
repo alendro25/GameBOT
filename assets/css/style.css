@@ -118,7 +118,7 @@ body {
 /* Awal Main */
 .main {
   margin-top: 120px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .main .container .row .nav-tabs .nav-link {
